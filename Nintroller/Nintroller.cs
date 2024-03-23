@@ -669,7 +669,7 @@ namespace NintrollerLib
                         case StatusType.Unknown:
                         case StatusType.DiscoverExtension:
                         default:
-                            /* Based on observations, while the Nyko Frontman is connected to the Wiimote (before being configured properly by WiitarThing),
+                            /* Based on observations, while the Nyko Frontman is connected to the Wiimote (before being configured properly by WiimoteThing),
                                every few seconds the Wiimote sends status reports where the extension controller bit is alternating between 0 and 1
                                from one report to another. These contradicting reports disrupt the extension discovery process, causing it to toggle between
                                a Wiimote and a Guitar, all of this while the guitar remains physically connected.

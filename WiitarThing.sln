@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WiitarThing", "WiitarThing\WiitarThing.csproj", "{4ED3CDAC-B467-497B-A80D-AAB4A395A7EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiimoteThing", "WiimoteThing\WiimoteThing.csproj", "{4ED3CDAC-B467-497B-A80D-AAB4A395A7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nintroller", "Nintroller\Nintroller.csproj", "{ACC86CB0-CE56-4B4E-8024-DCB49B9FC5FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintroller", "Nintroller\Nintroller.csproj", "{ACC86CB0-CE56-4B4E-8024-DCB49B9FC5FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
