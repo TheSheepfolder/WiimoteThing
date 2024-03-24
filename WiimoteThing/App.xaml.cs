@@ -17,7 +17,7 @@ namespace WiimoteThing
             // show the original instance
             //if (this.MainWindow.WindowState == WindowState.Minimized)
             //{
-                ((MainWindow)this.MainWindow).ShowWindow();
+                ((MainWindow)this.MainWindow).Show();
             //}
 
             this.MainWindow.Activate();

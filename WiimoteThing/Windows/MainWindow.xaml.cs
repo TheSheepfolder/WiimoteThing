@@ -336,12 +336,7 @@ namespace WiimoteThing
             }
             catch { }
 
-            if (UserPrefs.Instance.startMinimized)
-            {
-                menu_StartMinimized.IsChecked = true;
-                //WindowState = WindowState.Minimized;
-                Hide();
-            }
+
             
             menu_AutoStart.IsChecked = UserPrefs.Instance.autoStartup;
             menu_NoSharing.IsChecked = UserPrefs.Instance.greedyMode;
@@ -349,7 +344,21 @@ namespace WiimoteThing
             menu_MsBluetooth.IsChecked = !UserPrefs.Instance.toshibaMode;
 
             Refresh();
-            AutoRefresh(menu_AutoRefresh.IsChecked && ApplicationIsActivated());
+            AutoRefresh(menu_AutoRefresh.IsChecked);
+
+
+
+            if (UserPrefs.Instance.startMinimized)
+            {
+                menu_StartMinimized.IsChecked = true;
+                //WindowState = WindowState.Minimized;
+
+                WindowState = WindowState.Normal;
+                Hide();
+
+            }
+
+
         }
 
         private void btn_calibrateguitar(object sender, RoutedEventArgs e)
@@ -407,7 +416,7 @@ namespace WiimoteThing
             
             if (menu_AutoRefresh.IsChecked)
             {
-                AutoRefresh(ApplicationIsActivated());
+                AutoRefresh(menu_AutoRefresh.IsChecked);
             }
         }
 
@@ -573,7 +582,7 @@ namespace WiimoteThing
             menu_AutoRefresh.IsChecked = !menu_AutoRefresh.IsChecked;
             UserPrefs.Instance.autoRefresh = menu_AutoRefresh.IsChecked;
             UserPrefs.SavePrefs();
-            AutoRefresh(menu_AutoRefresh.IsChecked && ApplicationIsActivated());
+            AutoRefresh(menu_AutoRefresh.IsChecked);
         }
 
         private void menu_SetDefaultCalibration_Click(object sender, RoutedEventArgs e)

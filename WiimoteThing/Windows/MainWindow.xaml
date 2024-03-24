@@ -141,18 +141,6 @@
                     <GradientStop Color="White" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
-            <Button.ContextMenu>
-                <ContextMenu>
-                    <MenuItem x:Name="menu_AutoStart2" Header="Auto Startup" Click="menu_AutoStart_Click"/>
-                    <MenuItem x:Name="menu_StartMinimized2" Header="Start Minimized" Click="menu_StartMinimized_Click"/>
-                    <MenuItem x:Name="menu_AutoRefresh2" Header="Use Auto Refresh" Click="menu_AutoRefresh_Click"/>
-
-                    <MenuItem x:Name="menu_SetDefaultCalibration2" Visibility="Collapsed"
-                        Header="Set Default Calibration" Click="menu_SetDefaultCalibration_Click"/>
-                    <MenuItem x:Name="menu_Repo2" Header="Open Github Repo" Click="menu_Github_Click"/>
-                    <MenuItem x:Name="menu_version2" Header="version 2.0" IsEnabled="False"/>
-                </ContextMenu>
-            </Button.ContextMenu>
             <Image Height="21" Width="25" Source="/Images/window-minimize.png"/>
         </Button>
         <Button x:Name="calibrateguitar" HorizontalAlignment="Left" Margin="59,0,0,0" VerticalAlignment="Top" Width="30" Height="26" BorderBrush="{DynamicResource BrushCigaretteAshGrey}" BorderThickness="1,0,1,1" FontSize="26" ToolTip="How to calibrate guitars" Click="btn_calibrateguitar" VerticalContentAlignment="Center" Padding="0,0,0,0" FontFamily="Lucida Console" Foreground="White" Visibility="Visible" FontWeight="Bold">

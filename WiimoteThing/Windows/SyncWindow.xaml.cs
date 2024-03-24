@@ -390,7 +390,7 @@ namespace WiimoteThing.Windows
 
             if (Count > 0)
             {
-                MessageBox.Show("Device connected successfully. Give Windows up to a few minutes to install the drivers and it will show up in the list on the left.", "Device Found", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Device connected successfully.", "Device Found", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
 

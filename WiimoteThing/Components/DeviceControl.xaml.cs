@@ -740,11 +740,11 @@ namespace WiimoteThing
                         }
                 ));
             }
-            else if (!isLow && lowBatteryFired)
-            {
-                //statusGradient = (GradientStop)FindResource("CigaretteAshGrey");
-                lowBatteryFired = false;
-            }
+            //else if (!isLow && lowBatteryFired)
+            //{
+            //    //statusGradient = (GradientStop)FindResource("CigaretteAshGrey");
+            //    lowBatteryFired = false;
+            //}
         }
 
         private void LoadProfile(string profilePath, Holders.Holder h)
