@@ -59,14 +59,14 @@ namespace WiimoteThing
 
                     if (value)
                     {
-                        if (key.GetValue("WiinUSoft") == null)
+                        if (key.GetValue("WiimoteThing") == null)
                         {
-                            key.SetValue("WiinUSoft", (new Uri(System.Reflection.Assembly.GetEntryAssembly().CodeBase)).LocalPath);
+                            key.SetValue("WiimoteThing", (new Uri(System.Reflection.Assembly.GetEntryAssembly().CodeBase)).LocalPath);
                         }
                     }
                     else
                     {
-                        key.DeleteValue("WiinUSoft", false);
+                        key.DeleteValue("WiimoteThing", false);
                     }
                 }
                 catch
