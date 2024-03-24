@@ -6,14 +6,14 @@
         ShowInTaskbar="true"
         Title="WiimoteThing 2024" 
         Width="640" 
-        Height="420" 
+        Height="480" 
         Loaded="Window_Loaded" 
         ResizeMode="NoResize"
         AllowsTransparency="True"
         Background="Transparent">
 
     <Window.Clip>
-        <RectangleGeometry Rect="0,0,640,420" RadiusX="15" RadiusY="15"/>
+        <RectangleGeometry Rect="0,0,640,480" RadiusX="15" RadiusY="15"/>
 
     </Window.Clip>
 
