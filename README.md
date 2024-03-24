@@ -1,6 +1,6 @@
 # WiimoteThing
 
-A program that lets you connect Wii Guitar Hero instruments to a Windows PC wirelessly using a wiimote and Bluetooth.
+connects your wiimotes and accessories as if they were xbox controllers
 
 ## Table of Contents
 
@@ -24,12 +24,7 @@ A program that lets you connect Wii Guitar Hero instruments to a Windows PC wire
 
 ### Install WiimoteThing
 
-1. Download and install [ViGEmBus](https://github.com/ViGEm/ViGEmBus/releases).
-2. Download WiimoteThing from [the "Releases" tab](https://github.com/TheNathannator/WiimoteThing/releases), and extract it into a new folder.
-
-#### A Note About Older Versions
-
-If you're updating from v2.7.0 or earlier, you should uninstall the ScpDriver that it required, as it is no longer necessary. It is not required to be uninstalled however, if you have other programs that use it then you can leave it installed.
+1. Download WiimoteThing from [the "Releases" tab](https://github.com/Evilvir-us/WiimoteThing/releases), and extract it anywhere.
 
 ### Connect Your Wiimote
 
@@ -65,7 +60,7 @@ The following wiimote extensions are supported:
 - Classic Controller
 - Classic Controller Pro
 
-Wiimotes can also be used standalone, currently with mappings that are intended for using a wiimote like you would a gamepad with Gamepad Mode enabled.
+Wiimotes can also be used standalone, currently with mappings that are intended for using a wiimote like you would a remote.
 
 The Wii U Pro Controller is also supported, and can be synced the same way as a wiimote can.
 
@@ -73,7 +68,7 @@ The Wii U Pro Controller is also supported, and can be synced the same way as a 
 
 On World Tour/GH5 guitars, the touch bar can be enabled and disabled by pressing the + and - buttons on the wiimote, respectively. When enabled, the touchbar will be mapped to the regular frets.
 
-- Please note that the touchbar is not the best and may be very finnicky! WiimoteThing has no ability to fix this, as it just simply takes the data it gets and translates it directly.
+- Please note that the touchbar sucks and may be very finnicky! WiimoteThing has no ability to fix this, as it just simply takes the data it gets and translates it directly.
 
 ## Troubleshooting
 
@@ -109,4 +104,4 @@ WiimoteThing will not work directly for the PC versions of Guitar Hero 3, Aerosm
 
 WiimoteThing is built upon [WiinUSoft and WiinUPro](https://github.com/KeyPuncher/WiinUPro), but not forked because the changes are too significant and messy. All credit for connecting Wiimotes in general and most of the UI goes to [KeyPuncher](https://github.com/KeyPuncher).
 
-This version of WiimoteThing is based on [Myst/Meowmaritus's original version](https://github.com/Meowmaritus/WiimoteThing), with the original ViGEmBus code done by [MWisBest in their fork/issue](https://github.com/Meowmaritus/WiimoteThing/issues/9). [Aida-Enna](https://github.com/Aida-Enna) merged the ViGEmBus code and built releases for it, and now [TheNathannator](https://github.com/TheNathannator) maintains it.
+This version of WiimoteThing is based on [Myst/Meowmaritus's original version](https://github.com/Meowmaritus/WiimoteThing), with the original ViGEmBus code done by [MWisBest in their fork/issue](https://github.com/Meowmaritus/WiimoteThing/issues/9). [Aida-Enna](https://github.com/Aida-Enna) merged the ViGEmBus code and built releases for it, [TheNathannator](https://github.com/TheNathannator) suped it up, and [Evilvir-us](https://github.com/Evilvir-us) modified their cool stuff for his own purposes.
