@@ -123,7 +123,7 @@ namespace WiimoteThing
 
         public void ShowWindow()
         {
-            trayIcon.Visibility = Visibility.Hidden;
+            //trayIcon.Visibility = Visibility.Hidden;
             Show();
             WindowState = WindowState.Normal;
         }
@@ -135,7 +135,7 @@ namespace WiimoteThing
 
         public void ShowBalloon(string title, string message, BalloonIcon icon, SystemSound sound)
         {
-            trayIcon.Visibility = Visibility.Visible;
+            //trayIcon.Visibility = Visibility.Visible;
             trayIcon.ShowBalloonTip(title, message, icon);
 
             if (sound != null)
@@ -143,12 +143,12 @@ namespace WiimoteThing
                 sound.Play();
             }
 
-            Task restoreTray = new Task(new Action(() =>
-            {
-                Thread.Sleep(7000);
-                Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => trayIcon.Visibility = WindowState == WindowState.Minimized ? Visibility.Visible : Visibility.Hidden));
-            }));
-            restoreTray.Start();
+            //Task restoreTray = new Task(new Action(() =>
+            //{
+            //    Thread.Sleep(7000);
+            //    Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => trayIcon.Visibility = WindowState == WindowState.Minimized ? Visibility.Visible : Visibility.Hidden));
+            //}));
+            //restoreTray.Start();
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
