@@ -98,7 +98,6 @@
     <Resource Include="Images\wrench-icon.png" />
     <Resource Include="Images\xbox_360_controller-small.png" />
     <Resource Include="Images\xboxlogob64.png" />
-    <Resource Include="GHWT_Wii_Guitar.ico" />
     <Resource Include="Images\X_Button.png" />
     <Resource Include="trayicon.ico" />
   </ItemGroup>
