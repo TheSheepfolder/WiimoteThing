@@ -742,7 +742,7 @@ namespace WiimoteThing
             }
             else if (!isLow && lowBatteryFired)
             {
-                statusGradient = (GradientStop)FindResource("CigaretteAshGrey");
+                //statusGradient = (GradientStop)FindResource("CigaretteAshGrey");
                 lowBatteryFired = false;
             }
         }

@@ -7,7 +7,7 @@
         <Color x:Key="GunMetal">#FF3b3b3b</Color>
         <Color x:Key="CigaretteAshGrey">#FF636363</Color>
         <Color x:Key="VantaBlack">#FF000000</Color>
-        <Color x:Key="LowBattery">#FFDF6C25</Color>
+        <Color x:Key="LowBattery">#FFFF3333</Color>
         <LinearGradientBrush x:Key="ButonFillBrush1" EndPoint="0,1" StartPoint="0,0">
             <GradientStop Color="#636363" Offset="0"/>
             <GradientStop Color="#3b3b3b" Offset="0.5"/>
