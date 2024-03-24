@@ -264,9 +264,9 @@ namespace WiimoteThing
         public string hid = "";
         public string name = "";
         public string lastIcon = "";
-        public bool autoConnect = false;
+        public bool autoConnect = true;
         public bool useRumble = true;
-        public int autoNum = 0;
+        public int autoNum = 5;
         public int rumbleIntensity = 2;
         public ProfHolderType connType;
         public string profile = "";

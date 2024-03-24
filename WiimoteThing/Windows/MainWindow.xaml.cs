@@ -117,7 +117,7 @@ namespace WiimoteThing
             //if (WindowState == WindowState.Minimized)
             //{
             //    trayIcon.Visibility = Visibility.Visible;
-            //    Hide();
+                Hide();
             //}
         }
 
@@ -149,6 +149,17 @@ namespace WiimoteThing
                 Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() => trayIcon.Visibility = WindowState == WindowState.Minimized ? Visibility.Visible : Visibility.Hidden));
             }));
             restoreTray.Start();
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+        private void btnCredits_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("Credits:\n\nWiinUSoft:\n  Justin Keys\n\nGuitar Support:\n   Meowmaritus\n\nTurntable Support:\n   shockdude\n\nViGEm Support:\n  MWisBest\n\nAlmost Nothing:\n  Aida Enna", "Credits", MessageBoxButton.OK, MessageBoxImage.Information);
+
         }
 
         private void Refresh()
@@ -328,7 +339,8 @@ namespace WiimoteThing
             if (UserPrefs.Instance.startMinimized)
             {
                 menu_StartMinimized.IsChecked = true;
-                WindowState = WindowState.Minimized;
+                //WindowState = WindowState.Minimized;
+                Hide();
             }
             
             menu_AutoStart.IsChecked = UserPrefs.Instance.autoStartup;
@@ -340,6 +352,20 @@ namespace WiimoteThing
             AutoRefresh(menu_AutoRefresh.IsChecked && ApplicationIsActivated());
         }
 
+        private void btn_calibrateguitar(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show("You can calibrate the wiitar at any time, you do not need this window open.\n\n\n" +
+                "Calibrate the Whammy Bar, by moving the Whammy Bar all the way down, then back up.\r\n\n" +
+
+                "Calibrate the tilt functionality:\r\n" +
+                "\tLay the guitar flat with the buttons facing up.\r\n" +
+                "\tPress the 1 button on the Wiimote.\r\n" +
+                "\tStand the guitar up with the neck pointing upward.\r\n" +
+                "\tPress the 2 button on the Wiimote.", "How to Calibrate the Wiitar", MessageBoxButton.OK, MessageBoxImage.Information);
+
+        }
+        
         private void DeviceControl_OnConnectStateChange(DeviceControl sender, DeviceState oldState, DeviceState newState)
         {
             if (oldState == newState)
@@ -425,6 +451,10 @@ namespace WiimoteThing
             new System.Threading.Timer(_ => tcs.SetResult(null)).Change(milliseconds, -1);
             return tcs.Task;
         }
+        private void MenuItem_Hide_Click(object sender, RoutedEventArgs e)
+        {
+            HideWindow();
+        }
 
         private void btnSync_Click(object sender, RoutedEventArgs e)
         {
@@ -497,17 +527,17 @@ namespace WiimoteThing
 
         private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)
         {
-            //foreach (DeviceControl dc in deviceList)
-            //{
-            //    if (dc.ConnectionState == DeviceState.Connected_XInput
-            //     || dc.ConnectionState == DeviceState.Connected_VJoy)
-            //    {
-            //        dc.Detatch();
-            //    }
-            //}
 
-            //Close();
+
+            MainWindow.Instance.ShowBalloon("Exiting Program...", "Controllers will not function when the app is closed.", Hardcodet.Wpf.TaskbarNotification.BalloonIcon.None);
+
+            foreach (DeviceControl dc in deviceList)
+            {
+                dc.Detatch();
+            }
+            Close();
         }
+
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {

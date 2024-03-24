@@ -229,16 +229,18 @@ namespace WiimoteThing.Holders
                 case ControllerType.Nunchuk:
                 case ControllerType.NunchukB:
                 case ControllerType.Wiimote:
-                    result.Add(Wiimote.InputNames.RIGHT, Inputs.Xbox360.UP);
-                    result.Add(Wiimote.InputNames.LEFT, Inputs.Xbox360.DOWN);
+                    result.Add(Wiimote.InputNames.UP, Inputs.Xbox360.UP); //SP
+                    result.Add(Wiimote.InputNames.DOWN, Inputs.Xbox360.DOWN);
+                    result.Add(Wiimote.InputNames.LEFT, Inputs.Xbox360.LEFT);
+                    result.Add(Wiimote.InputNames.RIGHT, Inputs.Xbox360.RIGHT);
 
-                    result.Add(Wiimote.InputNames.B, Inputs.Xbox360.A); //Green
-                    result.Add(Wiimote.InputNames.DOWN, Inputs.Xbox360.B); //Red
-                    result.Add(Wiimote.InputNames.A, Inputs.Xbox360.Y); //Yellow
+                    result.Add(Wiimote.InputNames.B, Inputs.Xbox360.B); //Green
+                    
+                    result.Add(Wiimote.InputNames.A, Inputs.Xbox360.A); //Yellow
                     result.Add(Wiimote.InputNames.ONE, Inputs.Xbox360.X); //Blue
-                    result.Add(Wiimote.InputNames.TWO, Inputs.Xbox360.LB); //Orange
+                    result.Add(Wiimote.InputNames.TWO, Inputs.Xbox360.Y); //Orange
 
-                    result.Add(Wiimote.InputNames.UP, Inputs.Xbox360.BACK); //SP
+                    
 
                     result.Add(Wiimote.InputNames.PLUS, Inputs.Xbox360.START);
                     result.Add(Wiimote.InputNames.MINUS, Inputs.Xbox360.BACK);

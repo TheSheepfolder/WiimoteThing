@@ -216,7 +216,7 @@ namespace WiimoteThing
             Dispatcher.BeginInvoke
             (
                 System.Windows.Threading.DispatcherPriority.Background,
-                new Action(() => statusGradient.Color = (Color)FindResource("AntemBlue")
+                new Action(() => statusGradient.Color = (Color)FindResource("CigaretteAshGrey")
             ));
         }
 
@@ -496,8 +496,8 @@ namespace WiimoteThing
 
                     holder.SetValue(Guitar.InputNames.G, gtr.G);
                     holder.SetValue(Guitar.InputNames.R, gtr.R);
-                    holder.SetValue(Guitar.InputNames.Y, gtr.Y);
-                    holder.SetValue(Guitar.InputNames.B, gtr.B);
+                    holder.SetValue(Guitar.InputNames.Y, gtr.B);
+                    holder.SetValue(Guitar.InputNames.B, gtr.Y);
                     holder.SetValue(Guitar.InputNames.O, gtr.O);
 
                     holder.SetValue(Guitar.InputNames.UP, gtr.Up);
@@ -742,7 +742,7 @@ namespace WiimoteThing
             }
             else if (!isLow && lowBatteryFired)
             {
-                statusGradient = (GradientStop)FindResource("AntemBlue");
+                statusGradient = (GradientStop)FindResource("CigaretteAshGrey");
                 lowBatteryFired = false;
             }
         }
@@ -904,8 +904,8 @@ namespace WiimoteThing
 
         private void XOption_Click(object sender, RoutedEventArgs e)
         {
-            if (Device.Type != ControllerType.ProController)
-                MessageBox.Show("Press 1+2 on the Wii remote and press OK to continue.", "Connect Wii Remote", MessageBoxButton.OK, MessageBoxImage.Information);
+            //if (Device.Type != ControllerType.ProController)
+                //MessageBox.Show("Press 1+2 on the Wii remote and press OK to continue.", "Connect Wii Remote", MessageBoxButton.OK, MessageBoxImage.Information);
 
             if (device.DataStream.Open() && device.DataStream.CanRead)
             {

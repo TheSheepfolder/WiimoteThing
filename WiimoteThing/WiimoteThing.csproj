@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <ApplicationIcon>GHWT_Wii_Guitar.ico</ApplicationIcon>
+    <ApplicationIcon>trayicon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <StartupObject>WiimoteThing.Program</StartupObject>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -30,6 +30,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Drums.png" />
+    <None Remove="Images\tinyguitar.png" />
+    <None Remove="Images\Turntable.png" />
+    <None Remove="Images\White_Wiitar.png" />
+    <None Remove="Images\window-minimize.png" />
+    <None Remove="Images\X_Button.png" />
+    <None Remove="trayicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System.Runtime.Remoting" />
     <ProjectReference Include="..\Nintroller\Nintroller.csproj" />
   </ItemGroup>
@@ -46,6 +56,7 @@
     <Resource Include="Images\ClassicControllerPro_map.png" />
     <Resource Include="Images\ClassicPro_white_32.png" />
     <Resource Include="Images\DJHero_Turntable.png" />
+    <Resource Include="Images\Drums.png" />
     <Resource Include="Images\GHWT_Wii_Drums.png" />
     <Resource Include="Images\GHWT_Wii_Guitar.png" />
     <Resource Include="Images\Nunchuck_map.png" />
@@ -59,7 +70,10 @@
     <Resource Include="Images\removeAll.png" />
     <Resource Include="Images\Settings-icon.png" />
     <Resource Include="Images\Sync.png" />
+    <Resource Include="Images\tinyguitar.png" />
+    <Resource Include="Images\Turntable.png" />
     <Resource Include="Images\unknown.png" />
+    <Resource Include="Images\White_Wiitar.png" />
     <Resource Include="Images\wiimote_white_32.png" />
     <Resource Include="Images\WiimoteBack_map.png" />
     <Resource Include="Images\WiimoteFront_map.png" />
@@ -68,10 +82,13 @@
     <Resource Include="Images\WiinUSoft_Icon32.png" />
     <Resource Include="Images\WiinUSoftAlpha.ico" />
     <Resource Include="Images\WiinUSoftBeta.ico" />
+    <Resource Include="Images\window-minimize.png" />
     <Resource Include="Images\wrench-icon.png" />
     <Resource Include="Images\xbox_360_controller-small.png" />
     <Resource Include="Images\xboxlogob64.png" />
     <Resource Include="GHWT_Wii_Guitar.ico" />
+    <Resource Include="Images\X_Button.png" />
+    <Resource Include="trayicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
