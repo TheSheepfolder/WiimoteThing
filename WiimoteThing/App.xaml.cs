@@ -15,10 +15,10 @@ namespace WiimoteThing
         public bool SignalExternalCommandLineArgs(IList<string> args)
         {
             // show the original instance
-            if (this.MainWindow.WindowState == WindowState.Minimized)
-            {
+            //if (this.MainWindow.WindowState == WindowState.Minimized)
+            //{
                 ((MainWindow)this.MainWindow).ShowWindow();
-            }
+            //}
 
             this.MainWindow.Activate();
 
