@@ -190,44 +190,16 @@ namespace WiimoteThing.Holders
                     result.Add(Wiimote.InputNames.TILT_DOWN, "");
                     break;
 
-                //case ControllerType.Nunchuk:
-                //case ControllerType.NunchukB:
-                //    result.Add(Nunchuk.InputNames.UP,    Inputs.Xbox360.LUP);
-                //    result.Add(Nunchuk.InputNames.DOWN,  Inputs.Xbox360.LDOWN);
-                //    result.Add(Nunchuk.InputNames.LEFT,  Inputs.Xbox360.LLEFT);
-                //    result.Add(Nunchuk.InputNames.RIGHT, Inputs.Xbox360.LRIGHT);
-                //    result.Add(Nunchuk.InputNames.Z,     Inputs.Xbox360.RT);
-                //    result.Add(Nunchuk.InputNames.C,     Inputs.Xbox360.LT);
-                //    result.Add(Nunchuk.InputNames.TILT_RIGHT, "");
-                //    result.Add(Nunchuk.InputNames.TILT_LEFT, "");
-                //    result.Add(Nunchuk.InputNames.TILT_UP, "");
-                //    result.Add(Nunchuk.InputNames.TILT_DOWN, "");
-                //    result.Add(Nunchuk.InputNames.ACC_SHAKE_X, "");
-                //    result.Add(Nunchuk.InputNames.ACC_SHAKE_Y, "");
-                //    result.Add(Nunchuk.InputNames.ACC_SHAKE_Z, "");
-
-                //    result.Add(Wiimote.InputNames.UP,    Inputs.Xbox360.UP);
-                //    result.Add(Wiimote.InputNames.DOWN,  Inputs.Xbox360.DOWN);
-                //    result.Add(Wiimote.InputNames.LEFT,  Inputs.Xbox360.LB);
-                //    result.Add(Wiimote.InputNames.RIGHT, Inputs.Xbox360.RB);
-                //    result.Add(Wiimote.InputNames.A,     Inputs.Xbox360.A);
-                //    result.Add(Wiimote.InputNames.B,     Inputs.Xbox360.B);
-                //    result.Add(Wiimote.InputNames.ONE,   Inputs.Xbox360.X);
-                //    result.Add(Wiimote.InputNames.TWO,   Inputs.Xbox360.Y);
-                //    result.Add(Wiimote.InputNames.PLUS,  Inputs.Xbox360.BACK);
-                //    result.Add(Wiimote.InputNames.MINUS, Inputs.Xbox360.START);
-                //    result.Add(Wiimote.InputNames.HOME,  Inputs.Xbox360.GUIDE);
-                //    result.Add(Wiimote.InputNames.ACC_SHAKE_X, "");
-                //    result.Add(Wiimote.InputNames.ACC_SHAKE_Y, "");
-                //    result.Add(Wiimote.InputNames.ACC_SHAKE_Z, "");
-                //    result.Add(Wiimote.InputNames.TILT_RIGHT, "");
-                //    result.Add(Wiimote.InputNames.TILT_LEFT, "");
-                //    result.Add(Wiimote.InputNames.TILT_UP, "");
-                //    result.Add(Wiimote.InputNames.TILT_DOWN, "");
-                //    break;
-
                 case ControllerType.Nunchuk:
                 case ControllerType.NunchukB:
+                    result.Add(Nunchuk.InputNames.C, Inputs.Xbox360.LB);
+                    result.Add(Nunchuk.InputNames.Z, Inputs.Xbox360.LT);
+                    result.Add(Nunchuk.InputNames.RIGHT, Inputs.Xbox360.LRIGHT);
+                    result.Add(Nunchuk.InputNames.LEFT, Inputs.Xbox360.LLEFT);
+                    result.Add(Nunchuk.InputNames.UP, Inputs.Xbox360.LUP);
+                    result.Add(Nunchuk.InputNames.DOWN, Inputs.Xbox360.LDOWN);
+                    break;
+
                 case ControllerType.Wiimote:
                     result.Add(Wiimote.InputNames.UP, Inputs.Xbox360.UP); //SP
                     result.Add(Wiimote.InputNames.DOWN, Inputs.Xbox360.DOWN);
