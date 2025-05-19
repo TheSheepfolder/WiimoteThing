@@ -38,5 +38,11 @@
         public const string BACK   = "xBACK";
         public const string START  = "xSTART";
         public const string GUIDE  = "xGUIDE";
+
+        // Nunchuk inputs
+        public const string NUNCHUK_C = "xNUNCHUK_C";
+        public const string NUNCHUK_Z = "xNUNCHUK_Z";
+        public const string NUNCHUK_JOY_X = "xNUNCHUK_JOY_X";
+        public const string NUNCHUK_JOY_Y = "xNUNCHUK_JOY_Y";
     }
 }

@@ -397,7 +397,6 @@ namespace WiimoteThing
                     holder.SetValue(Nunchuk.InputNames.UP,    nun.joystick.Y > 0 ? nun.joystick.Y : 0f);
                     holder.SetValue(Nunchuk.InputNames.DOWN,  nun.joystick.Y < 0 ? nun.joystick.Y * -1 : 0f);
 
-                    //TODO: Nunchuk Accelerometer (not for 1st release)
                     holder.SetValue(Nunchuk.InputNames.TILT_RIGHT, nun.accelerometer.X > 0 ? nun.accelerometer.X : 0f);
                     holder.SetValue(Nunchuk.InputNames.TILT_LEFT, nun.accelerometer.X < 0 ? nun.accelerometer.X * -1 : 0f);
                     holder.SetValue(Nunchuk.InputNames.TILT_UP, nun.accelerometer.Y > 0 ? nun.accelerometer.Y : 0f);
